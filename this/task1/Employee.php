@@ -5,17 +5,17 @@ class Employee
     public string $name;
     public int $age;
     public float $salary;
-    public function getName(): void
+    public function getName(): string
     {
-        echo $this->name . "\n";
+        return $this->name;
     }
-    public function getAge(): void
+    public function getAge(): float
     {
-        echo $this->age . "\n";
+        return $this->age;
     }
-    public function getSalary(): void
+    public function getSalary(): float
     {
-        echo $this->salary . "\n";
+        return $this->salary;
     }
     public function checkAge(): bool
     {
